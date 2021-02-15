@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
+    <title>Notes - WebComponents</title>
+    <style>
+        body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <page-layout>
+        <note-input></note-input>
+        <notes-section></notes-section>
+    </page-layout>
+    <script src="./components/page-layout.js" type="module"></script>
+    <script src="./components/note-input.js" type="module"></script>
+    <script src="./components/note-card.js" type="module"></script>
+    <script src="./components/notes-section.js" type="module"></script>
+</body>
+</html>

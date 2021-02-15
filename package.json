@@ -1,0 +1,21 @@
+{
+    "name": "notes-webcomponents",
+    "version": "1.0.0",
+    "description": "Simple note taking web app using web components",
+    "scripts": {
+        "dev": "serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/diegoguevara/notes-webcomponents.git"
+    },
+    "author": "Diego Guevara <diegoguevara.dev",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/diegoguevara/notes-webcomponents/issues"
+    },
+    "homepage": "https://github.com/diegoguevara/notes-webcomponents#readme",
+    "devDependencies": {
+        "serve": "^11.3.2"
+    }
+}
