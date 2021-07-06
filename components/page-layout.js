@@ -9,7 +9,10 @@ class PageLayout extends HTMLElement {
         template.innerHTML = `
             <div class="container">
                 <div class="content">
-                    <slot></slot>
+                    <slot name="input"></slot>
+                </div>
+                <div class="content">
+                    <slot name="notes"></slot>
                 </div>
             </div>
             ${this.getStyles()}
@@ -23,14 +26,16 @@ class PageLayout extends HTMLElement {
                 .container {
                     width: 100%;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
+                    align-items: center;
                 }
                 .content {
                     width: 100%;
-                    max-width: 1000px;
                     padding: 0 16px 0 16px;
                     display: flex;
-                    flex-direction: column;
+                    justify-content: center;
+                    flex-wrap: wrap;
                 }
             </style>
         `

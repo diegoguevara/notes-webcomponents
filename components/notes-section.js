@@ -20,6 +20,8 @@ class NotesSection extends HTMLElement {
                     width: 100%;
                     display: flex;
                     margin-top: 16px;
+                    flex-wrap: wrap;
+                    justify-content: center;
                 }
             </style>
         `

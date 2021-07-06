@@ -9,7 +9,7 @@ class NoteInput extends HTMLElement {
         template.innerHTML = `
             <div class="container">
                 <div class="content">
-                    <textarea placeholder="Write your note ..." rows="6"></textarea>
+                    <textarea autofocus placeholder="Write your note ..." rows="6"></textarea>
                     <button>save</button>
                 </div>
             </div>
@@ -56,6 +56,7 @@ class NoteInput extends HTMLElement {
         }
         document.dispatchEvent( new CustomEvent( 'x-add-note', { detail: noteText.value } ) );
         noteText.value = '';
+        noteText.focus();
     }
 
     render() { 
